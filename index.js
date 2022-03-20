@@ -5,8 +5,7 @@ const client = new Discord.Client({
     intents: ["GUILDS", "GUILD_MEMBERS", "GUILD_MESSAGES"]
 })
 
-var token = 'process.env.token'
-client.login(token)
+client.login(process.env.token)
 
 client.on("ready", () => {
     console.log("OK")
